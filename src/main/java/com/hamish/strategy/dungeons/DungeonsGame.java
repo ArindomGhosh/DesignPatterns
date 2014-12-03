@@ -1,5 +1,9 @@
 package com.hamish.strategy.dungeons;
 
+import com.hamish.strategy.dungeons.behaviors.SwordBehavior;
+import com.hamish.strategy.dungeons.characters.*;
+import com.hamish.strategy.dungeons.characters.Character;
+
 /**
  * Created by hamishdickson on 10/11/14.
  *

@@ -1,4 +1,8 @@
-package com.hamish.strategy.dungeons;
+package com.hamish.strategy.dungeons.characters;
+
+import com.hamish.strategy.dungeons.behaviors.SwordBehavior;
+
+import java.lang.*;
 
 /**
  * Created by hamishdickson on 10/11/14.

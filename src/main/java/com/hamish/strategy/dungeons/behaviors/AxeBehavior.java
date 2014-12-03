@@ -1,4 +1,4 @@
-package com.hamish.strategy.dungeons;
+package com.hamish.strategy.dungeons.behaviors;
 
 /**
  * Created by hamishdickson on 10/11/14.

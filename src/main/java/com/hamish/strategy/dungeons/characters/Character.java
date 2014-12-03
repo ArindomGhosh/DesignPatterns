@@ -1,4 +1,6 @@
-package com.hamish.strategy.dungeons;
+package com.hamish.strategy.dungeons.characters;
+
+import com.hamish.strategy.dungeons.behaviors.WeaponBehavior;
 
 /**
  * Created by hamishdickson on 10/11/14.
