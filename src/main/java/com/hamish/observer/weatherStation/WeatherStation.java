@@ -2,6 +2,10 @@ package com.hamish.observer.weatherStation;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * The Observer Pattern: defines a one-to-many dependence between objects
+ * so that when one object so that when one object changes state, all of
+ * it's dependents are notified and updated automatically.
  */
 public class WeatherStation {
     public static void main(String[] args) {
