@@ -1,4 +1,4 @@
-package com.hamish.factory.pizza2;
+package com.hamish.factory.abstractFactory;
 
 /**
  * Created by hamishdickson on 06/12/14.

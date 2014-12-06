@@ -1,6 +1,6 @@
-package com.hamish.factory.pizza2;
+package com.hamish.factory.abstractFactory;
 
-import com.hamish.factory.pizza2.veggies.Veggies;
+import com.hamish.factory.abstractFactory.veggies.Veggies;
 
 /**
  * Created by hamishdickson on 06/12/14.

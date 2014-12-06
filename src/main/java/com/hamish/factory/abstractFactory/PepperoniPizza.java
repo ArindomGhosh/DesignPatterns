@@ -1,12 +1,11 @@
-package com.hamish.factory.pizza2;
+package com.hamish.factory.abstractFactory;
 
 /**
  * Created by hamishdickson on 06/12/14.
  */
-public class ClamPizza extends Pizza {
+public class PepperoniPizza extends Pizza {
     PizzaIngredientFactory pizzaIngredientFactory;
-
-    public ClamPizza(PizzaIngredientFactory pizzaIngredientFactory) {
+    public PepperoniPizza(PizzaIngredientFactory pizzaIngredientFactory) {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }
 

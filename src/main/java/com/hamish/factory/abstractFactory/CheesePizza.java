@@ -1,11 +1,12 @@
-package com.hamish.factory.pizza2;
+package com.hamish.factory.abstractFactory;
 
 /**
  * Created by hamishdickson on 06/12/14.
  */
-public class PepperoniPizza extends Pizza {
+public class CheesePizza extends Pizza {
     PizzaIngredientFactory pizzaIngredientFactory;
-    public PepperoniPizza(PizzaIngredientFactory pizzaIngredientFactory) {
+
+    public CheesePizza(PizzaIngredientFactory pizzaIngredientFactory) {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }
 
@@ -15,6 +16,5 @@ public class PepperoniPizza extends Pizza {
         dough = pizzaIngredientFactory.createDough();
         sauce = pizzaIngredientFactory.createSauce();
         cheese = pizzaIngredientFactory.createCheese();
-        clams = pizzaIngredientFactory.createClams();
     }
 }

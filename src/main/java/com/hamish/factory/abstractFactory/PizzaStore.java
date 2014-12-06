@@ -1,4 +1,4 @@
-package com.hamish.factory.pizza2;
+package com.hamish.factory.abstractFactory;
 
 import com.hamish.factory.pizza.Pizza;
 

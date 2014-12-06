@@ -1,4 +1,4 @@
-package com.hamish.factory.pizza2.veggies;
+package com.hamish.factory.abstractFactory.veggies;
 
 /**
  * Created by hamishdickson on 06/12/14.
