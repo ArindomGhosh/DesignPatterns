@@ -22,7 +22,7 @@ public abstract class Pizza {
     }
 
     void bake() {
-        System.out.println("Base for 25mins at 350");
+        System.out.println("Bake for 25mins at 350");
     }
 
     void cut() {
