@@ -10,6 +10,10 @@ import com.hamish.decorator.condiments.Whip;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * The Decorator Pattern: attaches additional responsibilities to an object
+ * dynamically. Decorators provide a flexible alternative to subclassing for
+ * extending functionality.
  */
 public class StarbuzzCoffee {
 
