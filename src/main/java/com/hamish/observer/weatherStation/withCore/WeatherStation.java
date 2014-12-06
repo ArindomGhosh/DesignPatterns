@@ -1,4 +1,4 @@
-package com.hamish.observer.weatherStation;
+package com.hamish.observer.weatherStation.withCore;
 
 /**
  * Created by hamishdickson on 06/12/14.
@@ -6,6 +6,8 @@ package com.hamish.observer.weatherStation;
  * The Observer Pattern: defines a one-to-many dependence between objects
  * so that when one object so that when one object changes state, all of
  * it's dependents are notified and updated automatically.
+ *
+ * Implement using java core observer classes
  */
 public class WeatherStation {
     public static void main(String[] args) {

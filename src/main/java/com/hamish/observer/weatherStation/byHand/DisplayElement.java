@@ -1,4 +1,4 @@
-package com.hamish.observer.weatherStation;
+package com.hamish.observer.weatherStation.byHand;
 
 /**
  * Created by hamishdickson on 06/12/14.

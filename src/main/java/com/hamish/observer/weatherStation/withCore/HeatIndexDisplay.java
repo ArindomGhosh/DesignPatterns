@@ -1,4 +1,7 @@
-package com.hamish.observer.weatherStation;
+package com.hamish.observer.weatherStation.withCore;
+
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created by hamishdickson on 06/12/14.
@@ -6,12 +9,13 @@ package com.hamish.observer.weatherStation;
  * copied from headindex.txt at wickedlysmart.com
  */
 public class HeatIndexDisplay implements Observer, DisplayElement {
-    float heatIndex = 0.0f;
-    private WeatherData weatherData;
 
-    public HeatIndexDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    float heatIndex = 0.0f;
+    Observable observable;
+
+    public HeatIndexDisplay(Observable observable) {
+        this.observable = observable;
+        observable.addObserver(this);
     }
 
     private float computeHeatIndex(float t, float rh) {
@@ -32,8 +36,11 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
-        heatIndex = computeHeatIndex(temp, humidity);
-        display();
+    public void update(Observable observable, Object o) {
+        if (observable instanceof WeatherData) {
+            WeatherData weatherData = (WeatherData) observable;
+            this.heatIndex = computeHeatIndex(weatherData.getTemperature(), weatherData.getHumidity());
+            display();
+        }
     }
 }
