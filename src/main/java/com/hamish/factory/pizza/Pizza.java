@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * Factories produce products - in this case, the product is a pizza
  */
 public abstract class Pizza {
     String name;
