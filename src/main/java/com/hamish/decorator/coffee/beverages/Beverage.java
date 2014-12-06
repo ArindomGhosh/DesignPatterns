@@ -2,6 +2,8 @@ package com.hamish.decorator.coffee.beverages;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * Note: this can be an interface.
  */
 public abstract class Beverage {
     // These bit's didn't originally exist (see last commit)
