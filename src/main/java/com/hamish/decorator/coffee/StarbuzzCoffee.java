@@ -1,12 +1,12 @@
-package com.hamish.decorator;
+package com.hamish.decorator.coffee;
 
-import com.hamish.decorator.beverages.Beverage;
-import com.hamish.decorator.beverages.DarkRoast;
-import com.hamish.decorator.beverages.Espresso;
-import com.hamish.decorator.beverages.HouseBlend;
-import com.hamish.decorator.condiments.Mocha;
-import com.hamish.decorator.condiments.Soy;
-import com.hamish.decorator.condiments.Whip;
+import com.hamish.decorator.coffee.beverages.Beverage;
+import com.hamish.decorator.coffee.beverages.DarkRoast;
+import com.hamish.decorator.coffee.beverages.Espresso;
+import com.hamish.decorator.coffee.beverages.HouseBlend;
+import com.hamish.decorator.coffee.condiments.Mocha;
+import com.hamish.decorator.coffee.condiments.Soy;
+import com.hamish.decorator.coffee.condiments.Whip;
 
 /**
  * Created by hamishdickson on 06/12/14.

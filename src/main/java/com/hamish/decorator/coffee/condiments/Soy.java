@@ -1,6 +1,6 @@
-package com.hamish.decorator.condiments;
+package com.hamish.decorator.coffee.condiments;
 
-import com.hamish.decorator.beverages.Beverage;
+import com.hamish.decorator.coffee.beverages.Beverage;
 
 /**
  * Created by hamishdickson on 06/12/14.
