@@ -14,6 +14,8 @@ import java.util.Observable;
  *
  * hey .. there is a public countObservers method (which is implementated) ... meaning anyone
  * can find out how many observers there are
+ *
+ * Note, before this implemented Subject
  */
 public class WeatherData extends Observable {
     private float temperature;

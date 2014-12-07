@@ -7,6 +7,9 @@ import java.util.Observer;
  * Created by hamishdickson on 06/12/14.
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
+    /**
+     * note, when we did this before, we used Subject
+     */
     Observable observable;
     private float temperature;
     private float humidity;
