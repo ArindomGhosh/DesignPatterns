@@ -12,8 +12,12 @@ package com.hamish.observer.weatherStation.byHand;
  */
 public class WeatherStation {
     public static void main(String[] args) {
+        /**
+         * the displays are coded to the subject interface, you have to tell them
+         * what Subject to use - in this case we only have WeatherData, but there
+         * could be others
+         */
         WeatherData weatherData = new WeatherData();
-
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
         HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
