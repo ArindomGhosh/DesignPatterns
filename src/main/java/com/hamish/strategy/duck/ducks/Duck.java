@@ -20,6 +20,8 @@ public abstract class Duck {
      *
      * note, this doesn't mean a java type interface it really means programs to
      * a supertype
+     *
+     * Each duck has-a fly behavior and a quack behavior = using composition
      */
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
@@ -37,6 +39,10 @@ public abstract class Duck {
 
     public abstract void display();
 
+    /**
+     * rather than handling the fly behavior itself, the duck class DELEGATES it to it's concrete
+     * implementation
+     */
     public void performFly() {
         flyBehavior.fly();
     }
