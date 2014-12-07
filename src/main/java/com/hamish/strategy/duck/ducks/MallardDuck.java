@@ -1,4 +1,7 @@
-package com.hamish.strategy.duck;
+package com.hamish.strategy.duck.ducks;
+
+import com.hamish.strategy.duck.behaviors.quacking.Quack;
+import com.hamish.strategy.duck.behaviors.flying.FlyWithWings;
 
 /**
  * Created by hamishdickson on 09/11/14.
