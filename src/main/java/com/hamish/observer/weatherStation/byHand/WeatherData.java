@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * This is the big boy that controls everything. This does the hard work and then when
+ * it feels good and ready, it notifies the observers, using their update method (they
+ * must have one as it's in the interface)
+ *
+ * The observers ("subscribers") this subject ("publisher") informs is kept in the ArrayList
  */
 public class WeatherData implements Subject {
     private ArrayList<Observer> observers;
@@ -15,7 +21,7 @@ public class WeatherData implements Subject {
         observers = new ArrayList<Observer>();
     }
 
-    /*
+    /**
      * just add a new observer to the end of the array list - nothing fancy
      */
     @Override
@@ -29,7 +35,7 @@ public class WeatherData implements Subject {
         if (i >= 0) observers.remove(i);
     }
 
-    /*
+    /**
      * important bit - because we know they are observers and they must implement update, we can just do this!
      */
     @Override
@@ -39,7 +45,7 @@ public class WeatherData implements Subject {
         }
     }
 
-    /*
+    /**
      * we notify the observers when we get updated measurements from the weather station
      */
     public void measurementsChanged() {
@@ -53,5 +59,5 @@ public class WeatherData implements Subject {
         measurementsChanged();
     }
 
-    // other WeatherData methods here
+    // other WeatherData methods here doing interesting things
 }
