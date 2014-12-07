@@ -14,9 +14,14 @@ import com.hamish.strategy.duck.ducks.ModelDuck;
  * clients that use it.
  *
  * Whole idea behind this is: take what varies and encapsulate it
- * so it won't affect the rest of your code.
+ * so it won't affect the rest of your code. Then, just refer to the
+ * supertype everywhere except where you have to set the concrete type
+ * ie in a constructor or a setter
  *
+ * "program to an interface, not an implementation" - interface
+ * not in the java sense, in the supertype sense..
  *
+ * There is quite a lot of power here
  */
 public class MainDuckSimulator {
     public static void main(String[] args) {

@@ -12,7 +12,9 @@ import com.hamish.strategy.duck.behaviors.flying.FlyBehavior;
  */
 public abstract class Duck {
     /**
-     * These are interfaces, meaning we don't need to know any of their details
+     * These are interfaces, meaning we don't need to know any of their details.
+     * This lets us just refer to the supertype and then set the concrete types in
+     * object constructors or setters.
      *
      * ie "program to an interface, not an implementation"
      *
