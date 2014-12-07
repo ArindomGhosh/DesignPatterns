@@ -4,6 +4,16 @@ import java.util.Observable;
 
 /**
  * Created by hamishdickson on 06/12/14.
+ *
+ * So java actually has an inbuilt observable class ... which looks like it might be thread safe
+ *
+ * with this you don't have to implement the list (actually it uses a Vector) yourself, the
+ * observable class does it
+ *
+ * Also, this has push and pull methods
+ *
+ * hey .. there is a public countObservers method (which is implementated) ... meaning anyone
+ * can find out how many observers there are
  */
 public class WeatherData extends Observable {
     private float temperature;
@@ -13,7 +23,7 @@ public class WeatherData extends Observable {
     public WeatherData() {}
 
     public void measurementsChanged() {
-        /*
+        /**
          * setChanged() kind of looks like this:
          *
          * setChanged() {
@@ -23,7 +33,7 @@ public class WeatherData extends Observable {
 
         setChanged();
 
-        /*
+        /**
          * notice we aren't sending a data object with the notifyObservers() call
          * that means we're using the PULL mode!
          *
@@ -49,7 +59,7 @@ public class WeatherData extends Observable {
     }
 
 
-    /*
+    /**
      * in case people want to PULL the data directly .. which sounds like a bad idea to me
      * but there you go!
      */
