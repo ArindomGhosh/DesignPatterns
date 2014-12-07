@@ -8,6 +8,15 @@ package com.hamish.observer.weatherStation.withCore;
  * it's dependents are notified and updated automatically.
  *
  * Implement using java core observer classes
+ *
+ * This implementation uses the core Observerable and Observer things. We no
+ * longer need Subject or Observer
+ *
+ * See WeatherData for more info, but NOTE:
+ * 1) Observable is a class, meaning you have to subclass it - you can only
+ *    subclass one class in java
+ * 2) The main methods in Observable are protected - meaning to use them
+ *    you have to subclass.
  */
 public class WeatherStation {
     public static void main(String[] args) {

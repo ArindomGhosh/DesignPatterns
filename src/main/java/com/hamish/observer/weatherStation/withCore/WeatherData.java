@@ -31,6 +31,9 @@ public class WeatherData extends Observable {
          * setChanged() {
          *      changed = true;
          * }
+         *
+         * You must call this if you want to notify your observers - normally this would be
+         * conditional on something, say if temp change is greater than 1 degree
          */
 
         setChanged();
