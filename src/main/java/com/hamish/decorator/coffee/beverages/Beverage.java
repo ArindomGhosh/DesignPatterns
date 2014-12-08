@@ -6,10 +6,11 @@ package com.hamish.decorator.coffee.beverages;
  * Note: this can be an interface.
  */
 public abstract class Beverage {
-    // These bit's didn't originally exist (see last commit)
+    // These size bits didn't originally exist (see last commit)
     public enum Size {TALL, GRANDE, VENTI};
     Size size = Size.TALL;
 
+    // add beverages need a name
     String description = "Unknown Beverage";
 
     public String getDescription() {
@@ -24,5 +25,6 @@ public abstract class Beverage {
         this.size = size;
     }
 
+    // must implement the cost value
     public abstract double cost();
 }

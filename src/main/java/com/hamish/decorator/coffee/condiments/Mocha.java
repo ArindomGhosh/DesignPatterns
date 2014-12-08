@@ -11,6 +11,9 @@ import com.hamish.decorator.coffee.beverages.Beverage;
 public class Mocha extends CondimentDecorator {
     Beverage beverage;
 
+    /**
+     * note this only has one constructor, which takes a beverage to decorate
+     */
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }

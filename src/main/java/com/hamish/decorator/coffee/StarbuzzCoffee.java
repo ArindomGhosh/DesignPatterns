@@ -21,9 +21,13 @@ public class StarbuzzCoffee {
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() + " $" + beverage.cost());
 
+        /**
+         * idea: create a new beverage, decorate it with a mocha (twice - double)
+         * and then decorate it with whip
+          */
         Beverage beverage1 = new DarkRoast();
+        beverage1 = new Mocha(beverage1); // create a new decorator, which takes a beverage
         beverage1 = new Mocha(beverage1);
-        beverage1 = new Mocha(beverage1); // wrap in a second Mocha (?)
         beverage1 = new Whip(beverage1);
 
         System.out.println(beverage1.getDescription() + " $" + beverage1.cost());
