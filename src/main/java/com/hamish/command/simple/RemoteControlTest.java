@@ -2,6 +2,11 @@ package com.hamish.command.simple;
 
 /**
  * Created by hamishdickson on 09/12/14.
+ *
+ * The command pattern: encapsulates a request as an object,
+ * thereby letting you parameterize other objects with different
+ * requests, queue or log requests, and support undoable
+ * operations.
  */
 public class RemoteControlTest {
     public static void main(String[] args) {
