@@ -12,4 +12,11 @@ package com.hamish.command.remote;
  */
 public interface Command {
     public void execute();
+
+    /**
+     *  add undo method
+     *
+     *  this undoes the last thing done
+      */
+    public void undo();
 }

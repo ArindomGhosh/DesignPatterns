@@ -12,6 +12,7 @@ package com.hamish.command.remote;
 public class RemoteControl {
     Command[] onCommands;
     Command[] offCommands;
+    Command undoCommand;
 
     public RemoteControl() {
         onCommands = new Command[7];
@@ -22,6 +23,7 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -29,12 +31,24 @@ public class RemoteControl {
         offCommands[slot] = offCommand;
     }
 
+    /**
+     * when a button is pressed, we take the command and first execute it; then
+     * we save a reference to it in the undoCommand instance variable. We do this
+     * for both on and off commands
+     * @param slot
+     */
     public void onButtonWasPushed(int slot) {
         onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
 
     public void offButtonWasPushed(int slot) {
         offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
+
+    public void undoCommandWasPushed() {
+        undoCommand.undo();
     }
 
     public String toString() {
