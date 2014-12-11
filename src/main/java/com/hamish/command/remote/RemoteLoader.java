@@ -23,6 +23,7 @@ public class RemoteLoader {
         Light livingRoomLight = new Light("Living room");
         Light kitchenLight = new Light("Kitchen");
         Stereo stereo = new Stereo("Living room");
+        CeilingFan ceilingFan = new CeilingFan("Living room");
 
         /**
          * create all light command objects
@@ -34,10 +35,20 @@ public class RemoteLoader {
         // .. etc ...
 
         /**
+         * celing fan commands
+         */
+        CeilingFanMediumCommand ceilingFanMediumCommand = new CeilingFanMediumCommand(ceilingFan);
+        CeilingFanHighCommand ceilingFanHighCommand = new CeilingFanHighCommand(ceilingFan);
+        CeilingFanOffCommand ceilingFanOffCommand = new CeilingFanOffCommand(ceilingFan);
+
+        /**
          * put the commands into the slots
          */
         remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
         remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff);
+
+        remoteControl.setCommand(2, ceilingFanMediumCommand, ceilingFanOffCommand);
+        remoteControl.setCommand(3, ceilingFanHighCommand, ceilingFanOffCommand);
 
         /**
          * we've implemented toString here
@@ -59,5 +70,17 @@ public class RemoteLoader {
         remoteControl.offButtonWasPushed(1);
         System.out.println(remoteControl);
         remoteControl.undoCommandWasPushed();
+
+        // celing fan stuff
+        remoteControl.onButtonWasPushed(2);
+        remoteControl.offButtonWasPushed(2);
+        System.out.println(remoteControl);
+        remoteControl.undoCommandWasPushed();
+
+        remoteControl.onButtonWasPushed(3);
+        remoteControl.offButtonWasPushed(3);
+        System.out.println(remoteControl);
+        remoteControl.undoCommandWasPushed();
+
     }
 }
