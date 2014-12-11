@@ -2,6 +2,12 @@ package com.hamish.command.remote;
 
 /**
  * Created by hamishdickson on 10/12/14.
+ *
+ * The remote control manages a sect of Command objects, one per button. When a button
+ * is pressed, the corresponding ButtonWasPushed() method is called, which invokes the
+ * execute() method on the command. That is, the full extent of the remotes' knowledge
+ * of the Command object decouples the remote from the classes doing the actual
+ * home-automation work.
  */
 public class RemoteControl {
     Command[] onCommands;

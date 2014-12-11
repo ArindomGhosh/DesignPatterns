@@ -2,6 +2,16 @@ package com.hamish.command.remote;
 
 /**
  * Created by hamishdickson on 10/12/14.
+ *
+ * The Command Pattern: encapsulates a request as an object, thereby
+ * letting you paramatise other objects with different requests, queue
+ * or log requests and support undoable operations
+ *
+ *
+ *
+ * This creates a number of command objects that are loaded into slots of the
+ * remote control. Each command object encapsulates a request of a home
+ * automation device
  */
 public class RemoteLoader {
     public static void main(String[] args) {

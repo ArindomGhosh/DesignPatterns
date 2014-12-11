@@ -7,6 +7,6 @@ public class NoCommand implements Command {
 
     @Override
     public void execute() {
-        System.out.println("No command");
+        System.out.println("No command - does nothing");
     }
 }
