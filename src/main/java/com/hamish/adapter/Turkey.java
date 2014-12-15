@@ -5,5 +5,9 @@ package com.hamish.adapter;
  */
 public interface Turkey {
     public void gobble();
+
+    /**
+     * turkeys can't fly very far
+     */
     public void fly();
 }

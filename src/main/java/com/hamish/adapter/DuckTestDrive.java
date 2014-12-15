@@ -2,6 +2,11 @@ package com.hamish.adapter;
 
 /**
  * Created by hamishdickson on 15/12/14.
+ *
+ * The Adapter Pattern: converts the interface of a class
+ * into another interface the clients expect. Adapter lets
+ * classes work together that couldn't otherwise because
+ * of incompatible interfaces.
  */
 public class DuckTestDrive {
     public static void main(String[] args) {
