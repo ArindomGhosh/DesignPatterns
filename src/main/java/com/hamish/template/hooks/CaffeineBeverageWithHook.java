@@ -2,6 +2,9 @@ package com.hamish.template.hooks;
 
 /**
  * Created by hamishdickson on 16/12/14.
+ *
+ * hooks vs abstract methods: MUST implement abstract method, don't
+ * care if your subclass implements a hook or not
  */
 public abstract class CaffeineBeverageWithHook {
     final void prepareRecipe() {
