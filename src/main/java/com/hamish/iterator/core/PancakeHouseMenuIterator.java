@@ -1,4 +1,4 @@
-package com.hamish.iterator;
+package com.hamish.iterator.core;
 
 import java.util.ArrayList;
 

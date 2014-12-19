@@ -1,13 +1,15 @@
-package com.hamish.iterator;
+package com.hamish.iterator.manual;
+
+import java.util.ArrayList;
 
 /**
  * Created by hamishdickson on 17/12/14.
  */
-public class DinerMenuIterator implements Iterator {
-    MenuItem[] items;
+public class PancakeHouseMenuIterator implements Iterator {
+    ArrayList<MenuItem> items;
     int position = 0;
 
-    public DinerMenuIterator(MenuItem[] items) {
+    public PancakeHouseMenuIterator(ArrayList<MenuItem> items) {
         this.items = items;
     }
 
@@ -18,7 +20,7 @@ public class DinerMenuIterator implements Iterator {
      */
     @Override
     public boolean hasNext() {
-        if (position >= items.length || items[position] == null) {
+        if (position >= items.size() || items.get(position) == null) {
             return false;
         }
         return true;
@@ -26,7 +28,7 @@ public class DinerMenuIterator implements Iterator {
 
     @Override
     public Object next() {
-        MenuItem menuItem = items[position];
+        MenuItem menuItem = items.get(position);
         position++;
         return menuItem;
     }

@@ -1,4 +1,4 @@
-package com.hamish.iterator;
+package com.hamish.iterator.manual;
 
 /**
  * Created by hamishdickson on 18/12/14.
