@@ -3,6 +3,9 @@ package com.hamish.iterator.core;
 /**
  * Created by hamishdickson on 18/12/14.
  *
+ * The Iterator Pattern: provides a way to access the elements of an aggregate object
+ * sequentially without exposing it's underlying representation
+ *
  * So, manual uses a manually implemented version of iterator. Here, we use the core version
  *
  * Note: along with the next() and hasNext() methods, the core interface has a remove()
@@ -15,8 +18,8 @@ package com.hamish.iterator.core;
  */
 public class MenuTestDrive {
     public static void main(String[] args) {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
+        Menu pancakeHouseMenu = new PancakeHouseMenu();
+        Menu dinerMenu = new DinerMenu();
 
         Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
 
