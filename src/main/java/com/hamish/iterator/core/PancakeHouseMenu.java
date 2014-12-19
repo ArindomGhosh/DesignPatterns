@@ -1,6 +1,7 @@
 package com.hamish.iterator.core;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by hamishdickson on 17/12/14.
@@ -41,8 +42,8 @@ public class PancakeHouseMenu {
         return menuItems;
     }
 
-    public Iterator createIterator() {
-        return new PancakeHouseMenuIterator(menuItems);
+    public Iterator<MenuItem> createIterator() {
+        return menuItems.iterator();
     }
 
     // other menu items here
