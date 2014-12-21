@@ -1,4 +1,6 @@
-package com.hamish.composite;
+package com.hamish.composite.iterator;
+
+import java.util.Iterator;
 
 /**
  * Created by hamishdickson on 21/12/14.
@@ -45,6 +47,10 @@ public class MenuItem extends MenuComponent {
             System.out.print(" (v)");
         }
         System.out.println(", " + getPrice());
-        System.out.println("    -- "+ getDescription());
+        System.out.println("    -- " + getDescription());
+    }
+
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator();
     }
 }

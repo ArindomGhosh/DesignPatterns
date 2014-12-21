@@ -1,4 +1,4 @@
-package com.hamish.composite;
+package com.hamish.composite.simple;
 
 import java.util.ArrayList;
 import java.util.Iterator;

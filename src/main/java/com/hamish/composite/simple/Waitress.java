@@ -1,4 +1,4 @@
-package com.hamish.composite;
+package com.hamish.composite.simple;
 
 /**
  * Created by hamishdickson on 21/12/14.

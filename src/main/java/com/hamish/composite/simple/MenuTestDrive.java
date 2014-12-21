@@ -1,4 +1,4 @@
-package com.hamish.composite;
+package com.hamish.composite.simple;
 
 /**
  * Created by hamishdickson on 21/12/14.
@@ -81,7 +81,7 @@ public class MenuTestDrive {
                 "A hot dog, with surkraut, relish, onions, topped with cheese",
                 false,
                 3.05));
-        
+
         // some more items
 
         Waitress waitress = new Waitress(allMenus);
