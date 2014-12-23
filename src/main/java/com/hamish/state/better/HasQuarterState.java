@@ -1,9 +1,12 @@
 package com.hamish.state.better;
 
+import java.util.Random;
+
 /**
  * Created by hamishdickson on 22/12/14.
  */
 public class HasQuarterState implements State {
+    Random randomWinner = new Random(System.currentTimeMillis()); // find a random winner!
     GumballMachine gumballMachine;
 
     public HasQuarterState(GumballMachine gumballMachine) {
@@ -24,7 +27,15 @@ public class HasQuarterState implements State {
     @Override
     public void turnCrank() {
         System.out.println("You turned...");
-        gumballMachine.setState(gumballMachine.getSoldState());
+        /**
+         * did they win?
+         */
+        int winner = randomWinner.nextInt(10);
+        if ((winner == 0) && (gumballMachine.getCount() > 1)) {
+            gumballMachine.setState(gumballMachine.getWinnerState());
+        } else {
+            gumballMachine.setState(gumballMachine.getSoldState());
+        }
     }
 
     @Override

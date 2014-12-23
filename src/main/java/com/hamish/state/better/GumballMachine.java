@@ -8,6 +8,7 @@ public class GumballMachine {
     State noQuarterState;
     State hasQuarterState;
     State soldState;
+    State winnerState;
 
     State state;
     int count = 0;
@@ -92,6 +93,10 @@ public class GumballMachine {
 
     public int getCount() {
         return count;
+    }
+
+    public State getWinnerState() {
+        return winnerState;
     }
 
     public void setCount(int count) {
