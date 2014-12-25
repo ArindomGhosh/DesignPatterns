@@ -1,4 +1,4 @@
-package com.hamish.proxy;
+package com.hamish.proxy.simple;
 
 /**
  * Created by hamishdickson on 23/12/14.

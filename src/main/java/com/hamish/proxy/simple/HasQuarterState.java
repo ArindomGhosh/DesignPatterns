@@ -1,4 +1,4 @@
-package com.hamish.proxy;
+package com.hamish.proxy.simple;
 
 import java.util.Random;
 
