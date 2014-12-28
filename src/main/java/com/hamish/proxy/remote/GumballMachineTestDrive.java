@@ -5,6 +5,8 @@ import java.rmi.Naming;
 /**
  * Created by hamishdickson on 23/12/14.
  *
+ * Proxy pattern: provides a surrogate or placeholder for another
+ * object to control access to it
  */
 public class GumballMachineTestDrive {
     public static void main(String[] args) {
