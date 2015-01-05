@@ -1,4 +1,4 @@
-package com.hamish.compoundPatterns.mvc;
+package com.hamish.compoundPatterns.mvc.beatExample;
 
 import javax.sound.midi.*;
 import java.util.ArrayList;

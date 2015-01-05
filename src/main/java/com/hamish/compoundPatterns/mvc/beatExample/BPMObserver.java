@@ -1,4 +1,4 @@
-package com.hamish.compoundPatterns.mvc;
+package com.hamish.compoundPatterns.mvc.beatExample;
 
 /**
  * Created by hamishdickson on 05/01/15.
