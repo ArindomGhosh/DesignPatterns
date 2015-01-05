@@ -11,7 +11,7 @@ public class DuckSimulator {
 
     private void simulate() {
         Quackable mallardDuck = new MallardDuck();
-        Quackable redheadDuck = new ReadheadDuck();
+        Quackable redheadDuck = new RedheadDuck();
         Quackable duckCall = new DuckCall();
         Quackable rubberDuck = new RubberDuck();
         // make a goose that acts like a ducky
@@ -19,7 +19,7 @@ public class DuckSimulator {
 
         // could have used the original, but I'd like to keep it there for ref
         Quackable mallardDuckQuack = new QuackCounter(new MallardDuck());
-        Quackable redheadDuckQuack = new QuackCounter(new ReadheadDuck());
+        Quackable redheadDuckQuack = new QuackCounter(new RedheadDuck());
         Quackable duckCallQuack = new QuackCounter(new DuckCall());
         Quackable rubberDuckQuack = new QuackCounter(new RubberDuck());
         // let's not care about the goose!
